@@ -1,0 +1,42 @@
+body{
+    font-family: "Smooch Sans", sans-serif;
+}
+
+.principal{
+    width: 940px;
+}
+
+.entradaTexto{
+    display:inline-block;
+    width: 70%;
+}
+.textoSinEncriptar{
+    text-align: left;
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    margin: 5%;
+}
+
+.botones{  
+    display: flex;
+   justify-content: center; 
+}
+
+.botonEncriptar{
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 20px 0;
+    width: 40%;
+    background-color: #128882;
+    border-color: #000000;
+    border-radius: 10px;
+}
+
+.botonDesencriptar{
+    font-weight: bold;
+    margin: 0px 10px;
+    width: 40%;
+    padding: 20px 0;
+    border-radius: 10px;
+}
