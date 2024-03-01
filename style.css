@@ -47,6 +47,19 @@ body{
 }
 
 .salidaTexto{
+    align-items: center;
     grid-column: 2/3; 
     padding: 30px 0 0 0;   
 }
+
+.parrafo1BajoImagen{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.parrafo2BajoImagen{
+    text-align: center;
+    font-size: 30px;
+}
+

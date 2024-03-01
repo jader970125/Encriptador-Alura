@@ -19,18 +19,23 @@
                     <input id="textoOriginal" type="text" class="textoSinEncriptar" placeholder="Escriba un texto.">
                 </section>
                 <section class="botones">
-                    <button type="button" class="botonEncriptar">Encriptar</button>
+                    <button onclick="encriptarTexto();" type="button" class="botonEncriptar">Encriptar</button>
                     <button type="button" class="botonDesencriptar">Desencriptar</button>
                 </section>
             </div>
             <div class="salidaTexto">
                 <img src="imagenes/muneco.png">
+                <section class="textoBajoImagen">
+                    <p class=parrafo1BajoImagen>Ningun mensaje fue encontrado.</p>
+                    <p class="parrafo2BajoImagen">Ingrese el texto que desea desencriptar</p>
+                    <p id="pruebaImprimir"></p>
+                </section>
             </div>
             
         </section>
         
 
     </main>
-    
+    <script src="logica.js" defer></script>
 </body>
 </html>
