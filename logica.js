@@ -22,6 +22,11 @@ function encriptarTexto(){
         }
     }
     
+    document.getElementById('imagenNoTexto').style.display = 'none';
+    var x = document.getElementsByClassName('textoBajoImagen');
+    for (var i = 0; i<x.length; i++)x[i].style.display='none';
+    document.getElementById('textoEncriptado').style.display = 'flex';
+    document.getElementById('textoEncriptado').innerHTML=textoEncriptado;
     return textoEncriptado;
 
 
