@@ -20,15 +20,18 @@
                 </section>
                 <section class="botones">
                     <button onclick="encriptarTexto();" type="button" class="botonEncriptar">Encriptar</button>
-                    <button type="button" class="botonDesencriptar">Desencriptar</button>
+                    <button onclick="desencriptarTexto();" type="button" class="botonDesencriptar">Desencriptar</button>
                 </section>
             </div>
             <div class="salidaTexto">
-                <img src="imagenes/muneco.png" id="imagenNoTexto">
-                <p id="textoEncriptado" class="textoEncriptado"></p>
                 <section class="textoBajoImagen">
-                    <p class=parrafo1BajoImagen>Ningun mensaje fue encontrado.</p>
+                    <img src="imagenes/muneco.png" id="imagenNoTexto" class="imagenNoTexto">
+                    <p class="parrafo1BajoImagen">Ningun mensaje fue encontrado.</p>
                     <p class="parrafo2BajoImagen">Ingrese el texto que desea desencriptar</p>
+                    <p id="textoEncriptado" class="textoEncriptado"></p>
+                </section>
+                <section>
+                    <button  type="button" class="botonCopiar">Copiar</button>
                 </section>
             </div>
             

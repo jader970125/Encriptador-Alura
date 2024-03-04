@@ -32,6 +32,41 @@ function encriptarTexto(){
 
 }
 
+function desencriptarTexto (){
+    let cuadroTexto=document.getElementById('textoOriginal').value;
+    let textoDesencriptado="";
+    console.log(cuadroTexto.lenght);
+    for(var i=0; i<cuadroTexto.length; i++){
+        if(cuadroTexto[i]=="a"){
+            textoDesencriptado = textoDesencriptado+"a";
+            i++;
+        }
+        else if(cuadroTexto[i]=="e"){
+            textoDesencriptado= textoDesencriptado+"e";
+            i=i+3;
+        }
+        else if(cuadroTexto[i]=="i"){
+            textoDesencriptado= textoDesencriptado+"i";
+            i=i+3;
+        }
+        else if(cuadroTexto[i]=="o"){
+            textoDesencriptado= textoDesencriptado+"o";
+            i=i+3;
+        }
+        else if(cuadroTexto[i]=="u"){
+            textoDesencriptado= textoDesencriptado+"u";
+            i=i+3;
+        }
+        else{
+            textoDesencriptado=textoDesencriptado + cuadroTexto[i];
+        }
+        
+    }
+    document.getElementById('textoEncriptado').innerHTML=textoDesencriptado;
+    return textoDesencriptado;
+
+}
+
 
 /*La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
