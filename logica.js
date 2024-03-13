@@ -28,6 +28,7 @@ function encriptarTexto(){
     document.getElementById('textoEncriptado').style.display = 'flex';
     document.getElementById('textoEncriptado').innerHTML=textoEncriptado;
     document.getElementById('botonCopiar').style.display = 'block';
+    alert('El texto ha sido encriptado');
     return textoEncriptado;
 
 
@@ -61,14 +62,25 @@ function desencriptarTexto (){
         else{
             textoDesencriptado=textoDesencriptado + cuadroTexto[i];
         }
-        
+
     }
+    
+    document.getElementById('imagenNoTexto').style.display = 'none';
+    var x = document.getElementsByClassName('textoBajoImagen');
+    for (var i = 0; i<x.length; i++)x[i].style.display='none';
+    document.getElementById('textoEncriptado').style.display = 'flex';
     document.getElementById('textoEncriptado').innerHTML=textoDesencriptado;
+    document.getElementById('botonCopiar').style.display = 'block';
+    alert('El texto ha sido desencriptado');
     return textoDesencriptado;
 
 }
 
-
+function copiarTexto(){
+    var textoProcesado = document.getElementById("textoEncriptado").innerText;
+    navigator.clipboard.writeText(textoProcesado);
+    alert('Texto Copiado.');
+}
 /*La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
 La letra "a" es convertida para "ai"
