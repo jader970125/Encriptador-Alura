@@ -1,6 +1,26 @@
+.supHead{
+    display: flex;
+}
+
+.imagenBanner{
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
+
+.textoBanner{
+    font-family: "Smooch Sans", sans-serif;
+    flex: 1;
+    font-size: 100px; 
+    padding: 0 0 0 30px;
+    font-weight: bold;
+    color:#123777;
+    
+}
+
 body{
     font-family: "Smooch Sans", sans-serif;
-    
+    background: linear-gradient(to bottom, white,#123777);
 }
 
 .principal{
@@ -12,9 +32,15 @@ body{
 }
 
 .entradaTexto{
+    background: rgba(255,255,255,0);
     grid-column: 1/2;
     width: 90%;
 }
+
+.textoOriginal{
+    
+}
+
 .textoSinEncriptar{
     text-align: left;
     width: 90%;
@@ -49,6 +75,7 @@ body{
 }
 
 .salidaTexto{
+    background: rgba(255,255,255,0);
     width: 90%;
     display:flex;
     align-items: center;

@@ -45,7 +45,7 @@ function desencriptarTexto (){
         }
         else if(cuadroTexto[i]=="e"){
             textoDesencriptado= textoDesencriptado+"e";
-            i=i+3;
+            i=i+4;
         }
         else if(cuadroTexto[i]=="i"){
             textoDesencriptado= textoDesencriptado+"i";
