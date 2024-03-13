@@ -27,6 +27,7 @@ function encriptarTexto(){
     for (var i = 0; i<x.length; i++)x[i].style.display='none';
     document.getElementById('textoEncriptado').style.display = 'flex';
     document.getElementById('textoEncriptado').innerHTML=textoEncriptado;
+    document.getElementById('botonCopiar').style.display = 'block';
     return textoEncriptado;
 
 

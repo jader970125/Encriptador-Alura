@@ -16,7 +16,7 @@
 
             <div class="entradaTexto">
                 <section>
-                    <input id="textoOriginal" type="text" class="textoSinEncriptar" placeholder="Escriba un texto.">
+                    <textarea id="textoOriginal" type="text" class="textoSinEncriptar" placeholder="Escriba un texto."></textarea>
                 </section>
                 <section class="botones">
                     <button onclick="encriptarTexto();" type="button" class="botonEncriptar">Encriptar</button>
@@ -28,10 +28,10 @@
                     <img src="imagenes/muneco.png" id="imagenNoTexto" class="imagenNoTexto">
                     <p class="parrafo1BajoImagen">Ningun mensaje fue encontrado.</p>
                     <p class="parrafo2BajoImagen">Ingrese el texto que desea desencriptar</p>
-                    <p id="textoEncriptado" class="textoEncriptado"></p>
                 </section>
-                <section>
-                    <button  type="button" class="botonCopiar">Copiar</button>
+                <section class="salidaTextoencriptado">
+                    <div id="textoEncriptado" class="textoEncriptado"></div>
+                    <button  type="button" id="botonCopiar" class="botonCopiar">Copiar</button>
                 </section>
             </div>
             

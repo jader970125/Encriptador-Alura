@@ -7,8 +7,8 @@ body{
     width: 940px;
     padding: 30px 0 0 0;
     display: grid;
-    grid-template-columns:60% 30%;
-    gap: 10%;
+    grid-template-columns:45% 45%;
+    gap: 30px;
 }
 
 .entradaTexto{
@@ -18,9 +18,11 @@ body{
 .textoSinEncriptar{
     text-align: left;
     width: 90%;
-    height: 400px;
+    height: 450px;
     padding: 20px;
     margin: 5%;
+    overflow-y: auto;
+    max-height: 400px;
 }
 
 .botones{  
@@ -79,20 +81,27 @@ body{
 
 .textoEncriptado{
     display: none;
-    text-align: left;
-    width: 385px;
-    padding: 20px;
-    margin: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:left;
+    height: 420px;
+    max-width: 400px;
+    margin: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    
 }
 
 .botonCopiar{
-    display: block;
+    display: none;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 21px 100px;
     padding: 20px 0;
     width: 40%;
     background-color: #128882;
     border-color: #000000;
     border-radius: 10px;
+    align-items: center;
 }
 
